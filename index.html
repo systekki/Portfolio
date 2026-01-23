@@ -1,0 +1,190 @@
+
+
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portfolio – Etunimi Sukunimi</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <meta name="description" content="Scrollaava teknologiahenkinen portfolio. Sisältää tiedot, työkokemuksen, koulutuksen, projektit sekä CV-latauslinkin ja yhteystiedot.">
+</head>
+<body>
+
+  <!-- Kiinteä yläpalkki -->
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <h1 class="site-title">Etunimi Sukunimi – Portfolio</h1>
+      <nav class="site-nav" aria-label="Päävalikko">
+        <ul>
+          <li><a href="#tietoja">Tietoja minusta</a></li>
+          <li><a href="#tyokokemus">Työkokemus</a></li>
+          <li><a href="#koulutus">Koulutus</a></li>
+          <li><a href="#projektit">Projektit</a></li>
+          <li><a href="#yhteys">Yhteystiedot</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Sivun sisältö -->
+  <main id="main" tabindex="-1">
+    <!-- Sankari / johdanto (valinnainen) -->
+    <section class="hero" aria-label="Johdanto">
+      <div class="container">
+        <p class="lead">
+          Tervetuloa portfoliooni. Olen [rooli / erikoisala], keskityn [avainsanat/teknologiat].
+        </p>
+        <div class="cta-row">
+          <a class="btn primary" href="#projektit">Katso projektit</a>
+          <a class="btn ghost" href="#tietoja">Lue lisää</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tietoja minusta -->
+    <section id="tietoja" class="section">
+      <div class="container">
+        <h2>Tietoja minusta</h2>
+        <p>
+          Kirjoita tähän lyhyt esittely itsestäsi: tausta, vahvuudet, kiinnostuksen kohteet,
+          sekä mitä haet seuraavaksi (esim. harjoittelupaikka, junior‑kehittäjän rooli).
+        </p>
+        <ul class="tags">
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>React</li>
+          <li>Node.js</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Työkokemus -->
+    <section id="tyokokemus" class="section alt">
+      <div class="container">
+        <h2>Työkokemus</h2>
+        <article class="item">
+          <header>
+            <h3>Yritys A – Tehtävä</h3>
+            <div class="meta">2023–2025 · Helsinki · Täysiaikainen</div>
+          </header>
+          <ul>
+            <li>Vastuualue/saavutus 1.</li>
+            <li>Vastuualue/saavutus 2 (teknologiat: X, Y, Z).</li>
+            <li>Mitattava tulos (esim. suorituskyky +30%).</li>
+          </ul>
+        </article>
+
+        <article class="item">
+          <header>
+            <h3>Yritys B – Tehtävä</h3>
+            <div class="meta">2021–2023 · Oulu · Harjoittelu</div>
+          </header>
+          <ul>
+            <li>Vastuualue/saavutus 1.</li>
+            <li>Vastuualue/saavutus 2.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- Koulutus -->
+    <section id="koulutus" class="section">
+      <div class="container">
+        <h2>Koulutus</h2>
+        <ul class="timeline">
+          <li>
+            <div class="tl-title">Oppilaitos / Tutkinto</div>
+            <div class="tl-meta">2022–2025</div>
+            <div class="tl-body">Pääkohdat, keskeiset kurssit ja opintoprojektit.</div>
+          </li>
+          <li>
+            <div class="tl-title">Toinen oppilaitos / Kurssi</div>
+            <div class="tl-meta">2021</div>
+            <div class="tl-body">Lyhyt kuvaus.</div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Projektit -->
+    <section id="projektit" class="section alt">
+      <div class="container">
+        <h2>Projektit</h2>
+
+        <div class="projects-grid">
+          <article class="project-card">
+            <h3>Projektin nimi</h3>
+            <p>Kuvaus projektista: ongelma, ratkaisu, roolisi, teknologiat.</p>
+            <ul class="mini-tags">
+              <li>React</li><li>Vite</li><li>API</li>
+            </ul>
+            <div class="links">
+              <a href="#" aria-label="Avaa demo">Demo</a>
+              <a href="#" aria-label="Avaa lähdekoodi GitHubissa">GitHub</a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <h3>Toinen projekti</h3>
+            <p>Lyhyt kuvaus ja keskeiset opit.</p>
+            <ul class="mini-tags">
+              <li>Node</li><li>Express</li><li>MongoDB</li>
+            </ul>
+            <div class="links">
+              <a href="#" aria-label="Avaa demo">Demo</a>
+              <a href="#" aria-label="Avaa lähdekoodi GitHubissa">GitHub</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Yhteystiedot + CV -->
+    <section id="yhteys" class="section">
+      <div class="container">
+        <h2>Yhteystiedot</h2>
+        <address class="contact">
+          <div><strong>Sähköposti:</strong> sina@esimerkki.fi</div>
+          <div><strong>Puhelin:</strong> 040 000 0000</div>
+          <div><strong>Sijainti:</strong> Oulu, Suomi</div>
+        </address>
+
+        <!-- Lataa CV (tallenna /kuvat/cv.pdf) -->
+        <a class="btn primary" href="kuvat/cv.pdf" download>⬇ Lataa CV (PDF)</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container small">
+      © <span id="year"></span> Etunimi Sukunimi. Kaikki oikeudet pidätetään.
+    </div>
+  </footer>
+
+  <script>
+    // Päivitä vuosiluku
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Varmistetaan, että kiinteä header ei peitä ankkureita:
+    // Lisätään scrollivara CSS:llä (scroll-margin-top). Tämä toimii jo tyylissä,
+    // mutta jos haluat JS-smooth scrollin vanhempiin selaimiin, tämä varmistaa.
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', e => {
+        const targetId = a.getAttribute('href').substring(1);
+        const target = document.getElementById(targetId);
+        if (target) {
+          e.preventDefault();
+          const headerOffset = document.querySelector('.site-header').offsetHeight;
+          const elementPosition = target.getBoundingClientRect().top + window.pageYOffset;
+          const offsetPosition = elementPosition - headerOffset - 8;
+          window.scrollTo({ top: offsetPosition, behavior: 'smooth' });
+          history.pushState(null, '', '#' + targetId);
+        }
+      });
+    });
+  </script>
+</body>
+</html>
+``

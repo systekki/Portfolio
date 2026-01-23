@@ -1,0 +1,173 @@
+
+
+/* Perusasetukset ja teknologiahenkinen teema */
+:root{
+  --bg: #0b0f19;
+  --panel: #111728;
+  --panel-alt: #0e1424;
+  --text: #d6e0ff;
+  --muted: #a8b3d1;
+  --brand: #3f5fbd;
+  --brand-2: #7aa7ff;
+  --accent: #00d1ff;
+  --success: #2dd4bf;
+  --warning: #f59e0b;
+  --radius: 12px;
+  --gap: 24px;
+  --shadow: 0 10px 30px rgba(0,0,0,0.35), inset 0 1px 0 rgba(255,255,255,0.03);
+}
+
+*{ box-sizing: border-box; }
+
+html{
+  scroll-behavior: smooth; /* CSS-pohjainen smooth scroll */
+}
+
+body{
+  margin: 0;
+  font-family: "Segoe UI", Roboto, Arial, sans-serif;
+  background: radial-gradient(1200px 800px at 80% -20%, rgba(0, 209, 255, 0.08), transparent 40%),
+              radial-gradient(900px 600px at 20% 120%, rgba(122, 167, 255, 0.10), transparent 55%),
+              var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+/* Yhteiset asettelut */
+.container{
+  width: min(1100px, 92vw);
+  margin: 0 auto;
+}
+
+.section{
+  padding: 80px 0;
+  scroll-margin-top: 90px; /* ettei kiinteä header peitä otsikoita */
+}
+
+.section h2{
+  margin: 0 0 16px;
+  padding-left: 14px;
+  border-left: 4px solid var(--brand);
+  color: var(--brand-2);
+  letter-spacing: 0.3px;
+}
+
+.alt{
+  background: linear-gradient(180deg, rgba(17,23,40,0.75), rgba(17,23,40,0.9));
+  box-shadow: var(--shadow);
+}
+
+/* Header (kiinteä, keskitetty) */
+.site-header{
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: rgba(17,23,40, 0.9);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid rgba(122,167,255,0.25);
+}
+
+.header-inner{
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  align-items: center;
+  padding: 18px 0;
+  row-gap: 10px;
+  text-align: center;
+}
+
+.site-title{
+  margin: 0;
+  font-size: clamp(20px, 2.2vw, 28px);
+  color: var(--brand-2);
+  letter-spacing: 0.8px;
+}
+
+/* Navigaatio */
+.site-nav ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.site-nav a{
+  display: inline-block;
+  padding: 10px 14px;
+  color: var(--muted);
+  text-decoration: none;
+  border: 1px solid transparent;
+  border-radius: 999px;
+  transition: 160ms ease;
+}
+
+.site-nav a:hover,
+.site-nav a:focus{
+  color: var(--text);
+  border-color: rgba(122,167,255,0.35);
+  background: linear-gradient(180deg, rgba(63,95,189,0.18), rgba(63,95,189,0.10));
+  outline: none;
+}
+
+/* Hero */
+.hero{
+  padding: 90px 0 40px; /* vähän tilaa headerin jälkeen */
+}
+
+.lead{
+  max-width: 70ch;
+  margin: 0 auto 18px;
+  color: var(--muted);
+  text-align: center;
+}
+
+.cta-row{
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Painikkeet */
+.btn{
+  display: inline-block;
+  padding: 12px 18px;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: 160ms ease;
+  border: 1px solid rgba(122,167,255,0.35);
+  color: var(--text);
+}
+
+.btn.primary{
+  background: linear-gradient(180deg, #3f5fbd, #2e4693);
+  border-color: transparent;
+}
+
+.btn.ghost{
+  background: rgba(255,255,255,0.02);
+}
+
+.btn:hover{
+  transform: translateY(-1px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.35);
+}
+
+/* Item-kortit */
+.item{
+  padding: 18px;
+  background: var(--panel-alt);
+  border: 1px solid rgba(122,167,255,0.15);
+  border-left: 4px solid var(--brand);
+  border-radius: var(--radius);
+  margin-bottom: var(--gap);
+  box-shadow: var(--shadow);
+}
+
+.item .meta{
+  color: var(--muted);
+  font-size: 0.95rem;
