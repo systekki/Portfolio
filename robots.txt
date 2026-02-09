@@ -1,0 +1,9 @@
+User-agent: *
+
+Disallow: /sivu2/
+Disallow: /sivu3/
+
+Allow: / 
+
+ 
+Sitemap: https://systekki.github.io/Portfolio/sitemap.xml
