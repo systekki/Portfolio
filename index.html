@@ -14,7 +14,10 @@
   <!-- Kiinteä yläpalkki -->
   <header class="site-header" role="banner">
     <div class="container header-inner">
-      <h1 class="site-title">Etunimi Sukunimi – Portfolio</h1>
+      <div class="photo-frame" aria-hidden="true">
+        <img src="images/me.jpg" alt="Oma valokuva" />
+      </div>
+      <h1 class="site-title">portfolio – Portfolio</h1>
       <nav class="site-nav" aria-label="Päävalikko">
         <ul>
           <li><a href="#tietoja">Tietoja minusta</a></li>
@@ -26,6 +29,9 @@
       </nav>
     </div>
   </header>
+
+  <a href="sivu2/sivu2.html">Linkki sivulle 2</a>
+  <a href="sivu3/sivu3.html">Linkki sivulle 3</a>
 
   <!-- Sivun sisältö -->
   <main id="main" tabindex="-1">
@@ -157,6 +163,7 @@
 
         <!-- Lataa CV (tallenna /kuvat/cv.pdf) -->
         <a class="btn primary" href="kuvat/cv.pdf" download>⬇ Lataa CV (PDF)</a>
+          <button id="showPortfolioMsg" class="btn">Näytä viesti</button>
       </div>
     </section>
   </main>
@@ -188,7 +195,8 @@
         }
       });
     });
+    // Ilmoitukset ja muut skriptit käsitellään erillisissä tiedostoissa.
   </script>
+  <script src="scripts/painike.js"></script>
 </body>
 </html>
-``
